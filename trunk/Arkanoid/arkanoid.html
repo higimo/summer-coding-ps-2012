@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Arkanoid</title>
+    <link rel="stylesheet" type="text/css" href="./css/arkanoidStyle.css" />
+    <script type="text/javascript" language="javascript" src="./js/arkanoid.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/include/include.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/class/circle.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/class/platform.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/class/rectangle.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/class/circle.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/class/bonus.js"></script>
+    <script type="text/javascript" language="javascript" src="./js/include/arkanoidFunc.js"></script>
+  </head>
+  <body>
+    <div class="game">
+      <div class="content">
+        <div id="intro" class="intro">
+          <h1>Arkanoid</h1>
+          <p>Click play and then press "Spase" to start.</p>
+          <p>
+            <button id="play" class="play" >Play</button>
+            <a class="about" href="help.html">About</a>
+          </p>    
+        </div>
+        <div id="score" class="score">
+          <p>Life:                   
+            <span id="life">3</span>
+            Removed bricks:                    
+            <span id="bricks">0</span>
+            Score: 
+            <span id="scoreBricks">0</span>
+          </p>
+
+        </div>
+      </div>
+    </div>
+    <canvas id="canvas" width="700" height="600"></canvas>
+    <a class="menu" id="mainmenu" href="arkanoid.html">Main menu</a>
+    <audio id="audio">
+      <source src="./sounds/boing.mp3" />
+    </audio>
+  </body>  
+</html>
